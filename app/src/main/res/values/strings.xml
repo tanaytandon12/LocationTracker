@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Location Tracker</string>
+    <string name="title_activity_home">Location Tracker</string>
+
+    <string name="startTracking">Start Tracking</string>
+    <string name="stopTracking">Stop Tracking</string>
+
+    <string name="locationPermissionRequired">You must give the app the permission to aceess your location</string>
+    <string name="ok">Ok</string>
+    <string name="locationPermissionDenied">You seem to have denied the app the location permission</string>
+    <string name="openSettings">Open Settings</string>
+    <string name="errorConnectingPlayServices">There was an error connected to Google Play Services.</string>
+</resources>
