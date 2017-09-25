@@ -1,7 +1,6 @@
 package com.tandon.tanay.locationtracker.data;
 
 import android.location.Location;
-import android.util.Log;
 
 import com.tandon.tanay.locationtracker.LocationTracker;
 import com.tandon.tanay.locationtracker.model.persistent.TrackingSessionEntity;
@@ -10,8 +9,6 @@ import com.tandon.tanay.locationtracker.model.persistent.UserLocationEntity;
 import java.util.List;
 
 import io.reactivex.Observable;
-
-import static android.content.ContentValues.TAG;
 
 public class Repository {
 
@@ -59,8 +56,7 @@ public class Repository {
     }
 
 
-    public Observable<List<UserLocationEntity>> getAllLocationsForSession(Long sessionId) {
-        Log.d(TAG, "getAllLocationsForSession: sessionId is " + sessionId);
+    public Observable<List<UserLocationEntity>> getAllLocationsForSession(final Long sessionId) {
         return databaseManager.getUserLocations(sessionId);
     }
 }

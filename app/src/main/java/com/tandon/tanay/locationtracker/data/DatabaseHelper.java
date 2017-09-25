@@ -6,9 +6,6 @@ import android.database.sqlite.SQLiteDatabase;
 import com.tandon.tanay.locationtracker.constants.DbConfig;
 import com.tandon.tanay.locationtracker.model.persistent.DaoMaster;
 
-/**
- * Created by tanaytandon on 19/09/17.
- */
 
 public class DatabaseHelper extends DaoMaster.OpenHelper {
 

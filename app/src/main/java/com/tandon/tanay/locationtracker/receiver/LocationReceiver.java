@@ -27,7 +27,6 @@ public class LocationReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        Log.d(TAG, "onReceive: arre bhai");
 
         if (intent != null) {
 
@@ -35,7 +34,6 @@ public class LocationReceiver extends BroadcastReceiver {
 
                 case Actions.LOCATION_RECEIVER_ACTION: {
 
-                    Log.d(TAG, "onReceive: hey there");
 
                     // get the first location
                     final Location location = LocationUtils.INSTANCE.getLocationFromIntent(intent);
